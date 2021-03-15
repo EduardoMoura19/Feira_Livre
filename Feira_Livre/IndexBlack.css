@@ -1,0 +1,349 @@
+body {
+    font-family: 'roboto', sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+header {
+    background: #000000;
+}
+
+
+/* Links */
+
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* grid 960px */
+
+.linha {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 5px 0px;
+}
+
+.linha.paginas {
+    border-style: solid;
+    list-style: none;
+    padding: 0;
+}
+
+.coluna {
+    padding: 0 10px;
+    float: left;
+}
+
+.col1 {
+    width: 60px;
+}
+
+.col2 {
+    width: 140px;
+}
+
+.col3 {
+    width: 220px;
+}
+
+.col4 {
+    width: 300px;
+}
+
+.col5 {
+    width: 380px;
+}
+
+.col6 {
+    width: 460px;
+}
+
+.col7 {
+    width: 540px;
+}
+
+.col8 {
+    width: 620px;
+}
+
+.col9 {
+    width: 700px;
+    padding-left: 10px;
+}
+
+.col10 {
+    width: 780px;
+}
+
+.col11 {
+    width: 860px;
+}
+
+.col12 {
+    width: 940px;
+}
+
+
+/* Imagens */
+
+img {
+    width: 95%;
+    float: left;
+}
+
+#anúncio {
+    width: 50%;
+}
+
+#logo {
+    width: 100%;
+}
+
+
+/* estilos reutilizáveis*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin: 15px 0 10px 0;
+    text-align: center;
+}
+
+.coluna.col10.body {
+    margin: 0% 18%;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    padding: 2% 3%;
+    background: #000000;
+}
+
+a {
+    cursor: pointer;
+}
+
+table {
+    text-align: center;
+}
+
+
+/* Cabeçalho */
+
+.coluna.col1.login {
+    margin: 3% 0 0 -5%;
+    float: left;
+    color: #fff;
+}
+
+.coluna.col1.carrinho {
+    margin: 3% 0 0 -2%;
+    float: left;
+    color: #fff;
+}
+
+.coluna.col1.cor {
+    margin: 3% 0 0 -1%;
+    float: left;
+    color: #fff;
+}
+
+#placeholder {
+    width: 350px;
+    height: 28px;
+    border-radius: 4px;
+    margin: 2% 1% 2% 12%;
+}
+
+#Procurar {
+    border: 1px solid #6ba8a9;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px 10px;
+    text-decoration: none;
+    margin-top: 5%;
+    background: white;
+}
+
+.coluna.col7 {
+    margin: 0 10%;
+    float: left;
+}
+
+.coluna.col5.anuncio {
+    margin: 0 5%;
+    float: left;
+}
+
+.coluna.col3 {
+    margin: 2% 0 0 0;
+}
+
+h1.logo {
+    font-weight: 300;
+    color: 315e8;
+    margin: 15% 0;
+}
+
+.header {
+    background-color: #000000;
+    margin: 0;
+    color: #fff;
+}
+
+.linha.navegacao {
+    background-color: #000000;
+    color: black;
+    width: 650px;
+    margin: 0 26%;
+}
+
+.linha.navegacao ul {
+    list-style: none;
+    margin: auto;
+}
+
+.linha.navegacao ul li {
+    float: left;
+}
+
+.linha.navegacao label {
+    width: 50px;
+    height: 5px;
+    padding: 20px;
+    background-color: #000000;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.secao {
+    width: 100%;
+    margin: 4%;
+}
+
+.content {
+    border-top: 5px solid #302f2f;
+    background-color: #302f2f;
+    display: none;
+    position: absolute;
+    width: 10%;
+    color: #fff;
+}
+
+.content ul li {
+    color: #fff;
+}
+
+.rd_tabs:checked~label {
+    background-color: #302f2f
+}
+
+.rd_tabs {
+    display: none;
+}
+
+.rd_tabs:checked~.content {
+    display: block;
+}
+
+
+/*layout do site*/
+
+.conteudo-extra {
+    background-color: white;
+}
+
+.coluna.col10.caixa {
+    background: #000000;
+    margin: 2% 19%;
+    padding: 0px 2%;
+    border-radius: 20px;
+}
+
+.coluna.col10.caixa h3 {
+    float: left;
+    color: #fff;
+}
+
+#corpo h3,
+h2 {
+    color: #fff;
+}
+
+#placeholder2 {
+    width: 300px;
+    height: 24px;
+    border-radius: 4px;
+    margin: 0 1% 0 5%;
+}
+
+
+/*Rodapé*/
+
+.footer {
+    background: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 100;
+}
+
+
+/* Botões */
+
+button {
+    border: 1px solid #6ba8a9;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px 10px;
+    text-decoration: none;
+    margin-top: 5%;
+    background: white;
+}
+
+#enviar {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px 10px;
+    text-decoration: none;
+    margin-top: 5%;
+    background: #fff;
+}
