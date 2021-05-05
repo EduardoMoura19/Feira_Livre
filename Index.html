@@ -9,50 +9,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="Index.css" />
+    <link rel="stylesheet" href="carrousel.css"/>
+    <script thref="index.js"></script>
+
 </head>
 
 <!-- Cabeçalho do site -->
 
 <body>
-    <header>
-        <div id="Cabeçalho">
-            <div class=" header ">
-                <div class="coluna col3 ">
-                    <a href="Index.html"><img src="Feira Livre Transparente.png" id="logo"></a>
-                </div>
-                <div>
-                    <header>
-                        <div class="coluna col7">
-                            <form id="form">
-                                <input placeholder="O que você está procurando?" id="placeholder">
-                                <button id="Procurar">Procurar</button>
-                            </form>
-                        </div>
-                        <div class="coluna col1 login">
-                            <span class="material-icons">
-                                supervisor_account
-                            </span>
-                            <a href="Login.html">Login</a>
-                        </div>
-                        <div class="coluna col1 carrinho">
-                            <span class="material-icons">
-                                local_grocery_store
-                            </span>
-                            <a href="Carrinho.html">carrinho</a>
-                        </div>
-                        <div class="coluna col1 cor">
-                            <span class="material-icons">
-                                invert_colors_off
-                            </span><br>
-                            <a href="IndexBlack.html">Cor</a>
-                        </div>
-                    </header>
+    <header class="container">
+        <a href="Index.html"><img src="Feira Livre Transparente.png" id="logo"></a>
+       
+        <nav> 
+            <div class="pesquisa">
+                <input type="text" placeholder="pesquise aqui"/>
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="icons">
+                <ul>
+                    <li>
+                        <a href=""> Login
+                            <i class="fas fa-user-friends"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""> Carrinho
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""> Cor
+                            <i class="fas fa-tint-slash"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
                 </div>
             </div>
         </div>
-        <div class="linha navegacao ">
+        <div class="linha navegacao">
             <div class="coluna col8 barra">
-                <ul>
+                <ul class="dropdown">
                     <li>
                         <input type="radio" name="tabs" class="rd_tabs" id="tab1">
                         <label for="tab1">Tab 1</label>
@@ -164,61 +163,89 @@
         </div>
     </header>
 
+   <!--carrousel
+   <div class="carrousel">
+   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Plantas.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Plantas.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Plantas.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>-->
     <!-- Corpo do site-->
     <div class="coluna col10 caixa">
-        <div class="linha">
+        <div class="linha104">
             <h3>Assine nossa news-letter e<br> fique por dentro de todas<br> as nossas novidades</h3>
-            <div id="form2">
+            <div id="form2" class="email">
                 <input placeholder="Digite seu e-mail" id="placeholder2">
-                <button onclick="alert('Olá! Agora você está cadastrado na nossa news-letter. Não esqueça de checar seu e-mail para mais notícias.')">Enviar</button>
+                <button id="buttonenviar" onclick="alert('Olá! Agora você está cadastrado na nossa news-letter. Não esqueça de checar seu e-mail para mais notícias.')">Enviar</button>
             </div>
         </div>
     </div>
-    <div id="corpo">
-        <div class="coluna col10 body ">
+        <div id="tabela">
             <div class="vendidos">
-                <h2>Mais Vendidos</h2>
+                <h2>BANCAS</h2>
             </div>
             <table>
                 <tr>
                     <th>
-                        <h3>Nome Do produto</h3>
+                        <h3>Banca 1</h3>
                         <a href="Compra.html"><img src="no-image.jpg"></a>
                         <a href="Compra.html">
-                            <h4>Preço</h4>
+                            <h4>Banca 1</h4>
                         </a>
                         <div id="botao">
-                            <a href="Compra.html"><button id="enviar">Comprar</button></a>
+                            <a href="Compra.html"><button id="enviar">Entrar</button></a>
                         </div>
                     </th>
                     <th>
-                        <h3>Nome Do produto</h3>
+                        <h3>Banca 2</h3>
                         <a href="Compra.html"><img src="no-image.jpg"></a>
                         <a href="Compra.html">
-                            <h4>Preço</h4>
+                            <h4>Banca 2</h4>
                         </a>
                         <div id="botao">
-                            <a href="Compra.html"><button id="enviar">Comprar</button></a>
+                            <a href="Compra.html"><button id="enviar">Ir para banca</button></a>
                         </div>
                     </th>
                     <th>
-                        <h3>Nome Do produto</h3>
+                        <h3>Banca 3</h3>
                         <a href="Compra.html"><img src="no-image.jpg"></a>
                         <a href="Compra.html">
-                            <h4>Preço</h4>
+                            <h4>Banca 3</h4>
                         </a>
                         <div id="botao">
-                            <a href="Compra.html"><button id="enviar">Comprar</button></a>
+                            <a href="Compra.html"><button id="enviar">produtos</button></a>
                         </div>
                     </th>
                     <th>
-                        <h3>Nome Do produto</h3>
+                        <h3>Banca 4</h3>
                         <a href="Compra.html"><img src="no-image.jpg"></a>
                         <a href="Compra.html">
-                            <h4>Preço</h4>
+                            <h4>Banca 4</h4>
                         </a>
                         <div id="botao">
-                            <a href="Compra.html"><button id="enviar">Comprar</button></a>
+                            <a href="Compra.html"><button id="enviar">Ver produtos</button></a>
                         </div>
                     </th>
                 </tr>
@@ -226,40 +253,40 @@
             <table>
                 <tr>
                     <th>
-                        <h3>Nome Do produto</h3>
+                        <h3>Banca 5</h3>
                         <a href="Compra.html"><img src="no-image.jpg"></a>
                         <a href="Compra.html">
-                            <h4>Preço</h4>
+                            <h4>Banca 5</h4>
                         </a>
                         <div id="botao">
                             <a href="Compra.html"><button id="enviar">Comprar</button></a>
                         </div>
                     </th>
                     <th>
-                        <h3>Nome Do produto</h3>
+                        <h3>Banca 6</h3>
                         <a href="Compra.html"><img src="no-image.jpg"></a>
                         <a href="Compra.html">
-                            <h4>Preço</h4>
+                            <h4>Banca 6</h4>
                         </a>
                         <div id="botao">
                             <a href="Compra.html"><button id="enviar">Comprar</button></a>
                         </div>
                     </th>
                     <th>
-                        <h3>Nome Do produto</h3>
+                        <h3>Banca 7</h3>
                         <a href="Compra.html"><img src="no-image.jpg"></a>
                         <a href="Compra.html">
-                            <h4>Preço</h4>
+                            <h4>Banca 7</h4>
                         </a>
                         <div id="botao">
                             <a href="Compra.html"><button id="enviar">Comprar</button></a>
                         </div>
                     </th>
                     <th>
-                        <h3>Nome Do produto</h3>
+                        <h3>Banca 8</h3>
                         <a href="Compra.html"><img src="no-image.jpg"></a>
                         <a href="Compra.html">
-                            <h4>Preço</h4>
+                            <h4>Banca 8</h4>
                         </a>
                         <div id="botao">
                             <a href="Compra.html"><button id="enviar">Comprar</button></a>
@@ -268,7 +295,7 @@
                 </tr>
             </table>
         </div>
-    </div>
+    
 
     <!-- Corpo de anúncio-->
 
@@ -304,6 +331,7 @@
             </footer>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/8e6038d16b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

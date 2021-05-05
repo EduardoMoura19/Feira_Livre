@@ -1,57 +1,92 @@
 body {
     font-family: 'roboto', sans-serif;
-    color: black;
-    margin: 0;
-    padding: 0;
     background-color: white;
+    align-items: center;
+    margin: 0;
+}
+
+.container{
+    padding: 20px 200px;
+}
+a{
+    text-decoration: none;
 }
 
 header {
-    background: #6ba8a9;
+    background: #f1e67e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
 }
 
-
-/* Links */
-
-a:link {
-    color: black;
-    text-decoration: none;
+header a img{
+    height: 100px;
 }
 
-a:visited {
-    color: black;
-    text-decoration: none;
+nav{
+    display: flex;
+    align-items: center;
+}
+nav .pesquisa input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    margin-right: 10px;
+}
+nav .pesquisa{
+    background: #FFFFFF;
+    height: 35px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
 }
 
-a:active {
-    color: black;
-    text-decoration: none;
+nav ul li{
+    list-style: none;
+    font-size: 20px;
 }
 
-a:hover {
-    color: black;
-    text-decoration: none;
+.icons{
+    color: #FFFFFF;
 }
-
-
-/* grid 960px */
+/*css sem edit*/
 
 .linha {
-    width: 960px;
-    margin: 0 auto;
-    overflow: auto;
+    width: 100%;
     padding: 5px 0px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.linha104{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.email{
+    width: 45%;
 }
 
 .linha.paginas {
     border-style: solid;
     list-style: none;
     padding: 0;
-}
-
-.coluna {
-    padding: 0 10px;
-    float: left;
 }
 
 .col1 {
@@ -133,14 +168,7 @@ h6 {
     text-align: center;
 }
 
-.coluna.col10.body {
-    margin: 0% 18%;
-    border-style: solid;
-    border-radius: 20px;
-    border-width: 1px;
-    padding: 2% 3%;
-    background: #ececec;
-}
+
 
 a {
     cursor: pointer;
@@ -216,8 +244,8 @@ table {
 }
 
 .coluna.col5.anuncio {
-    margin: 0 5%;
-    float: left;
+    margin-right: 5%;
+    flex-direction: row;
 }
 
 .coluna.col3 {
@@ -231,16 +259,17 @@ h1.logo {
 }
 
 .header {
-    background-color: #6ba8a9;
+    background-color: #f1e67e;
     margin: 0;
     color: black;
 }
 
 .linha.navegacao {
-    background-color: #6ba8a9;
+    background-color: #f1e67e;
     color: black;
-    width: 650px;
-    margin: 0 26%;
+    width: 100%;
+    
+    justify-content: center;
 }
 
 .linha.navegacao ul {
@@ -256,7 +285,7 @@ h1.logo {
     width: 50px;
     height: 5px;
     padding: 20px;
-    background-color: #6ba8a9;
+    background-color: #f1e67e;
     display: block;
     color: black;
     cursor: pointer;
@@ -269,27 +298,33 @@ h1.logo {
 }
 
 .content {
-    border-top: 5px solid #4e7d7e;
-    background-color: #4e7d7e;
+    border-top: 5px solid #f1e67e;
+    background-color: #f1e67e;
     display: none;
     position: absolute;
     width: 10%;
     color: #fff;
+    z-index: 999;
 }
 
 .content ul li {
     color: #fff;
 }
 
-.rd_tabs:checked~label {
-    background-color: #4e7d7e
+.dropdown:hover{
+    opacity:1; 
+    visibility: visible;
+}
+
+.rd_tabs:hover~label {
+    background-color: #f1e67e
 }
 
 .rd_tabs {
     display: none;
 }
 
-.rd_tabs:checked~.content {
+.rd_tabs:hover~.content {
     display: block;
 }
 
@@ -301,14 +336,30 @@ h1.logo {
 }
 
 .coluna.col10.caixa {
-    background: #6ba8a9;
-    margin: 2% 19%;
-    padding: 0px 2%;
+    background: #f1e67e;
+    width: 50%;
     border-radius: 20px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+    justify-content: center;
 }
 
 .coluna.col10.caixa h3 {
     float: left;
+}
+.coluna.col10.caixa .linha{
+    display: flex;
+    
+}
+
+#tabela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
 }
 
 #placeholder2 {
@@ -320,12 +371,15 @@ h1.logo {
     background: #ececec;
     padding-left: 1%;
 }
+#placeholder2 :active{
+   text-decoration: none;
+}
 
 
 /*Rodapé*/
 
 .footer {
-    background: #6ba8a9;
+    background: #f1e67e;
     color: black;
     padding: 20px 0;
     text-align: center;
@@ -361,4 +415,10 @@ button {
     text-decoration: none;
     margin-top: 5%;
     background: #6ba8a9;
+}
+
+#buttonenviar{
+    float: right;
+    height: 30px;
+    margin: 0;
 }
