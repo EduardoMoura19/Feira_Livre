@@ -268,52 +268,6 @@ h1.logo {
 
 /*layout do site*/
 
-.coluna.col10 {
-    border-style: ;
-    width: 80%;
-    height: 70%;
-    margin: 5% 10%;
-    padding: 10% 0%;
-}
-
-.Placeholder2 {
-    width: 200px;
-    height: 28px;
-    border-radius: 4px;
-    margin: 5% 0 2% 25%;
-}
-
-.password {
-    width: 200px;
-    height: 28px;
-    border-radius: 4px;
-    margin: 1% 0 2% 25%;
-}
-
-.linha.logar {
-    margin: -18% 0 5% 4%;
-}
-
-.coluna.col5.principal {
-    border: 2px solid;
-    border-radius: 300px;
-    width: 40%;
-    height: 50%;
-    margin: 0 0 -6% 6%;
-    padding: 5% 0 10% 0;
-    background: #6ba8a9;
-    color: white;
-}
-
-.cadastro {
-    margin: 1% 0 0 27%;
-}
-
-.coluna.col5.principal a {
-    text-decoration: underline;
-    color: #fff;
-}
-
 
 /*Rodapé*/
 
@@ -340,6 +294,25 @@ button {
     text-decoration: none;
     margin-top: 5%;
     background: white;
+}
+#button1{
+    background-color: #6ba8a9;
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto;
+    border-radius: 75px;
+}
+#button2{
+    background-color: #6ba8a9;
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto;
+    border-radius: 75px;
+    box-shadow: 1px 15px;
 }
 
 #enviar {
