@@ -303,6 +303,7 @@ button {
     flex-direction: column;
     margin: 2% auto;
     border-radius: 75px;
+    box-shadow: 1px 5px #242424d0;
 }
 #button2{
     background-color: #6ba8a9;
@@ -312,7 +313,7 @@ button {
     flex-direction: column;
     margin: 2% auto;
     border-radius: 75px;
-    box-shadow: 1px 15px;
+    box-shadow: 1px 5px #242424d0;
 }
 
 #enviar {
